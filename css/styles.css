@@ -30,6 +30,9 @@ button {
 address {
     font-style: normal;
 }
+img {
+    display: block;
+}
 body {
     font-family:"Roboto",sans-serif;
     color: #434455;
@@ -52,7 +55,8 @@ body {
 .header {
     background-color: #FFFFFF;
     height: 72px;
-    padding-top: 32px;
+    padding-top: 26px;
+    padding-bottom: 26px;
 }
 .header-container {
     display: flex;
@@ -139,7 +143,8 @@ color:var(--color-slate);
 .hero {
     height: 600px;
     background: #2E2F42;
-    padding-top : 108px;
+    padding-top : 188px;
+    padding-bottom: 188px;
    
 }
 .hero-list {
@@ -153,7 +158,7 @@ color:var(--color-slate);
     text-align: center;
     letter-spacing: 0.02em;
     color:var(--color-white);
-    margin-bottom: 20px;
+    padding-bottom: 48px;
  
 }
 .hero-button {
@@ -167,15 +172,13 @@ color:var(--color-slate);
     align-items: center;
     letter-spacing: 0.04em;
     color:var(--color-white);
-    cursor: pointer;
     margin-bottom: 20px;
     margin: 0 auto;
     border-radius: 4px;
     padding: 16px 32px;
+    margin-bottom: 188px;
 }
-.btn {
-    margin-top: 48px;
-}
+
 .hero-button:hover {
     background-color: #404BBF;
 color:  #404BBF;
@@ -184,10 +187,14 @@ color:  #404BBF;
     color:  #404BBF;
 }  
    /* --------------about----------- */
-
+.about {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
 .about-list {
     display: flex; 
 padding: 120px;
+margin-left: 0 auto;
 margin: 120px 0px 120px 0px;
     
     
@@ -199,11 +206,7 @@ margin: 120px 0px 120px 0px;
 flex-basis: calc ((100%-72px)/4);
     
 }
-.about-containor {
-    height: 344px;
 
-   
-}
 .about-text 
 {
 font-weight: 500;
@@ -220,8 +223,11 @@ color: var(--color-slate);
 }
 
 /*  -------------------work----- */
-.work-container {
+
+.work {
     height: 412px;
+     padding-top: 0px;
+     padding-bottom: 120px;
 }
 .work-text {
         font-weight: 700;
@@ -243,6 +249,10 @@ color:var();
 .list {
 }
 /* ----------- team---------- */
+.team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .team-container {
     height: 732px;
 }
@@ -278,6 +288,9 @@ color: #434455;
 .footer {
     background: #2E2F42;
     height: 312px;
+    padding-top: 106px; ;
+    padding-bottom: 100px;
+
 }
 .footer-logo {
     font-family: "Raleway",sans-serif;
@@ -318,12 +331,19 @@ color: #F4F4FD;
 }
 /* ---------filters--------- */
 .filters {
+    
+    
+
+}
+.filters-container {
+ 
 }
 .filters-button-list {
 }
 .list {
 }
 .filters-item {
+    display: flex;
 }
 .filters-button-link {
     font-family: "Roboto",sans-serif;
