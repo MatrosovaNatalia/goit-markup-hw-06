@@ -46,7 +46,7 @@ body {
     text-decoration: none;
 }
 .section {
-    padding-top: 120px;
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 .container {
@@ -58,7 +58,6 @@ body {
 }
 .header {
     background-color: #FFFFFF;
-    height: 72px;
     padding-top: 26px;
     padding-bottom: 26px;
 }
@@ -122,7 +121,7 @@ letter-spacing: 0.02em;
 color: #2E2F42;
 }
 .header-link:hover {
-    color: red;
+    color: #8B00ff;
 }
 .header-mailto {
 font-size: 16px;
@@ -131,7 +130,7 @@ letter-spacing: 0.02em;
 color: #434455;
 }
 .header-mailto:hover {
-color: red;
+color: #8B00ff;
 }
 .header-phone {
 font-size: 16px;
@@ -141,7 +140,7 @@ text-transform: uppercase;
 color:var(--color-slate);
 }
 .header-phone:hover {
-    color: red;
+    color: #8B00ff;
 }
 /* ----------------Hero-------------------- */
 .hero {
@@ -162,8 +161,9 @@ color:var(--color-slate);
     text-align: center;
     letter-spacing: 0.02em;
     color:var(--color-white);
-    padding-bottom: 48px;
- 
+    margin-bottom: 48px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 }
 .hero-button {
     background: #4D5AE5;
@@ -178,9 +178,10 @@ color:var(--color-slate);
     color:var(--color-white);
     margin-bottom: 20px;
     margin: 0 auto;
+    border: none;
     border-radius: 4px;
     padding: 16px 32px;
-    margin-bottom: 188px;
+    
 }
 
 .hero-button:hover {
@@ -241,7 +242,7 @@ height: 72px;
 /*  -------------------work----- */
 
 .work {
-    height: 412px;
+   
      padding-top: 0px;
      padding-bottom: 120px;
 }
@@ -257,7 +258,7 @@ margin-bottom: 72px;
 }
 .work-list {
     display: flex;
-    justify-content: space-between;
+   
   
    
 }
@@ -267,9 +268,12 @@ margin-bottom: 72px;
 .team {
     padding-top: 120px;
     padding-bottom: 120px;
+    background-color: #F4F4FD;
+
 }
 .team-container {
-    height: 732px;
+    
+    
 }
 .team-title {
     font-size: 36px;
@@ -278,7 +282,7 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
-margin-top: 120px;
+
 margin-bottom: 72px;
 }
 .team-list {
@@ -294,8 +298,8 @@ line-height: 1.20;
 text-align: center;
 letter-spacing: 0.02em;
 color: #2E2F42;
-margin-top: 32px;
-margin-bottom: 8px;
+background-color:  #FFFFFF;
+
 }
 .team-bottom-text {
     font-size: 16px;
@@ -303,12 +307,11 @@ line-height: 1.50;
 text-align: center;
 letter-spacing: 0.02em;
 color: #434455;
-margin-bottom: 32px;
+
 }
 /*    ---------footer---- */
 .footer {
     background: #2E2F42;
-    height: 312px;
     padding-top: 106px; ;
     padding-bottom: 100px;
 
@@ -350,16 +353,13 @@ line-height: 1.50;
 letter-spacing: 0.02em;
 color: #F4F4FD;
 width: 264px;
-height: 72px;
-margin-top: 18px;
-margin-bottom: 100px;
+margin-top: 16px;
+
 }
 /* ---------filters--------- */
 
 .filters-container {
-    width: 1158px;
-    height: 216px;
-    margin-top: 96px;
+ 
     margin-bottom: 72px;
   
 }
@@ -383,23 +383,15 @@ margin-bottom: 100px;
     color:#FFFFFF;
 }
 .filters-button-list {
-    width: 586px;
-    height: 48px;
-    margin-top: 96px;
-    margin-bottom: 72px;
-
 display: flex;
 justify-content: center;
 margin: 0 auto;
-text-align: center;
 gap: 24px;
 }
 .list {
-    display: flex;
-flex-direction: row;
-align-items: flex-start;
+  
 padding: 0px;
-gap: 24px;
+gap: 48px 24px;
  
 }
 .filters-item {
@@ -436,27 +428,31 @@ border-radius: 4px;
     color: #FFFFFF ;
 }
 .services-container-list {
-    
-  
     padding: 32px 16px;
     border: 1px; 
- 
     border-top: none;  
    
 }
 .list {
  display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+flex-wrap: wrap;
+   gap: 24px;
+   
 }
 .services-item {
+}
+.services {
+    padding: 32px 50px 32px 16px;
+    border-left: 1px solid #E7E9FC ;
+    border-right: 1px solid #E7E9FC ;
+    border-bottom: 1px solid #E7E9FC;
+
 }
 .services-title {
 font-size: 20px;
 line-height: 1.20;
 letter-spacing: 0.02em;
 color: var(--color-navy-blue);
-margin-top: 32px;
 margin-bottom: 8px;
 }
 .services-text {
@@ -464,5 +460,4 @@ font-size: 16px;
 line-height: 1.50;
 letter-spacing: 0.02em;
 color: var(--color-slate);
-margin-bottom: 32px;
 }
