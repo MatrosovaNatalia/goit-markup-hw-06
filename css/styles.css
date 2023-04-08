@@ -345,17 +345,23 @@ margin-bottom: 8px;
 
 
 .customers {
+    
 }
+
 .container {
-}
-.customers-box {
-    display: flex;
-    justify-content: space-between;
-    
-   
-    
 
 }
+.customers-box {
+  
+   
+
+    width: 1128px;
+    height: 200px;
+    left: 156px;
+    top: 2568px;
+    
+}
+
 .customers-text {
     
     font-weight: 700;
@@ -365,15 +371,17 @@ text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: #2E2F42;
+padding-bottom: 72px;
 
 }
 .customers-list {
-    display: inline-flex;
-    align-items: center;
-    justify-content:space-between ;
+  display: flex;
+  position: absolute;
+    flex-wrap: wrap;
     gap: 24px;
-      
-    margin-left: 0 auto;
+ 
+    
+    
 }
 .list {
   list-style: none;
@@ -383,7 +391,7 @@ color: #2E2F42;
 }
 .customers-link {
     display: flex;
-    flex-wrap: wrap;
+  
     align-items: center;
     justify-content: center;
    
