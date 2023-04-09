@@ -275,6 +275,7 @@ margin-bottom: 72px;
 /* ----------- team---------- */
 
 .team-container {
+    
        
 }
 .team-title {
@@ -297,6 +298,7 @@ margin-bottom: 72px;
 .team-wrap {
 padding: 32px 0;
 background-color: #ffffff;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-text {
@@ -589,6 +591,7 @@ border-radius: 4px;
     border: 1px; 
     border-top: none;  
    margin-bottom: 72px;
+   
 }
 .services-item {
 }
@@ -597,7 +600,11 @@ border-radius: 4px;
     border-left: 1px solid #E7E9FC ;
     border-right: 1px solid #E7E9FC ;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
+}
+.services:hover {
+    box-shadow:0px 1px 6px #8e8f99
 }
 .services-list {
     display: flex;
