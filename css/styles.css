@@ -249,14 +249,9 @@ height: 72px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000;
+ 
 }
-.policy-icons:hover {
-    color: #2E2F42;
-}
-.policy-icons:focus {
-    color:#2E2F42;
-}
+
 /*  -------------------work----- */
 
 .work {
