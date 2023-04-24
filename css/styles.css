@@ -49,6 +49,18 @@ body {
     padding-top: 96px;
     padding-bottom: 120px;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -748,9 +760,11 @@ transition: transform 250ms linear;
 
    justify-content: center;
    align-items: center;  
-   
+   color: #2E2F42;
 }
-
+.button-icon:hover {
+    color:#FFFFFF;
+}
 .modal-close-btn {
    width: 30px;
     height: 30px;
@@ -762,8 +776,12 @@ transition: transform 250ms linear;
     top: 20px;
     right: 20px; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color:  #E7E9FC;
 }
- 
+.modal-close-btn:hover {
+    background: #404BBF
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -811,7 +829,7 @@ border-color: #4D5AE5;
     fill: currentColor;
  }
 
-.modal-icon:focus {
+.modal-icon:hover {
   fill: #4D5AE5;  
 }
  .input-text {
@@ -834,12 +852,10 @@ border-color: #4D5AE5;
     border-radius: 4px;
     margin-top: 26px;
     margin-left: 24px;
-    resize: none;
-    
-    
+    resize: none;  
  }
 
-.modal-textarea:focus {
+.modal-textarea:hover {
     border-color: #4d5ae5;
 }
 .modal-btn {
@@ -863,24 +879,47 @@ letter-spacing: 0.04em;
 justify-content: center;
 margin: 0 auto;    
 }
+.modal-check {
+     width: 360px;
+     height: 16px;
+     margin-left: 24px;
+     
+}
  .check-text {
     font-size: 12px;
     display: flex;
     align-items: center;
-    margin-left: 24px;
-   
+    position: relative;
+    margin-left: 4px;
+   margin-top: 16px;
 margin-bottom: 24px;
-
+color: #8e8f99;
  }
- 
- .check-text::before {
-    content: "";
+ .check-text span {
+content: "";
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     margin-right: 10px;
     margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+fill: transparent;
+    
+ }
+ .check-text::before {
+    
+ }
+ .input-check:checked +.check-text span {
+    background-color: #404BBF;;
+    border: none;
+    fill: #F4F4FD;
+  
+
+
+  
  }
  .privacy-policy {
     margin-left: 4px;
@@ -911,7 +950,7 @@ padding-bottom: 16px;
     
 }
 .subscribe-input {
-    background-color: transparent;
+   
     width: 264px;
     height: 40px;
     padding-left: 16px;
@@ -919,7 +958,8 @@ padding-bottom: 16px;
     border: 1px solid #FFFFFF;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-right: 24px;
+    margin-right: 24px; 
+    background-color: transparent;
 }
 .subscribe-button {
     
