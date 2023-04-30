@@ -36,8 +36,7 @@ img {
     height: auto;
 }
 body {
-    font-family:"Roboto",sans-serif;
-    color: #434455;
+  
     background-color: #FFFFFF;
 }
 .list {
@@ -50,7 +49,7 @@ body {
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color:#F4F4FD;
+   
 }
 .visually-hidden {
     position: absolute;
@@ -310,7 +309,13 @@ margin-bottom: 72px;
 /* ----------- team---------- */
 
 .team section {   
-background: #F4F4FD  
+  
+}
+.team-container {
+    background: #F4F4FD;
+}
+.team-container:hover {
+    background: #FFFFFF;
 }
 .team-title {
     font-size: 36px;
@@ -813,8 +818,6 @@ transition: transform 250ms linear;
 }
 
  .modal-input {  
-  
- 
     width: 360px;
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -826,7 +829,6 @@ transition: transform 250ms linear;
     transition-property: border;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
     padding-left: 38px;
-  
     fill: currentColor;
  }
  .modal-input:focus {
@@ -840,7 +842,7 @@ transition: transform 250ms linear;
    left: 10px;
     top: 44%;
     transform: translateY(-50%);
-    fill: currentColor;
+    fill: #2E2F42;;
     
  }
 
@@ -879,7 +881,7 @@ transition: transform 250ms linear;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
      
  }
  .input-text2 {
@@ -892,6 +894,8 @@ transition: transform 250ms linear;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
+    
+
  }
 
  .modal-textarea {
@@ -904,7 +908,17 @@ transition: transform 250ms linear;
     resize: none;  
    padding-left: 16px;
    padding-top: 8px;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.17;
+   letter-spacing: 0.04em;
+
  }
+
+
+
 
 .modal-textarea:hover {
     border-color: #4d5ae5;
