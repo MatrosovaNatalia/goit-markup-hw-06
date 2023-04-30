@@ -770,8 +770,9 @@ transition: transform 250ms linear;
     background-color:  #E7E9FC;
 }
 .modal-close-btn:hover {
-    background: #404BBF
+    background: #404BBF; 
 }
+
 .button-icon {
    display: block;
     width: 24px;
@@ -836,11 +837,12 @@ transition: transform 250ms linear;
  }
  .modal-input:focus + .modal-icon {
     fill: #4D5AE5;
+   
 }
 .modal-icon {
     position: absolute;
    left: 10px;
-    top: 44%;
+    top: 57%;
     transform: translateY(-50%);
     fill: #2E2F42;;
     
@@ -882,6 +884,7 @@ transition: transform 250ms linear;
     letter-spacing: 0.04em;
     color: #8E8F99;
     margin-bottom: 4px;
+    
      
  }
  .input-text2 {
